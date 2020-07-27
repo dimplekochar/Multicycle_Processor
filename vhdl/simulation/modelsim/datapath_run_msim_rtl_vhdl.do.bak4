@@ -1,0 +1,28 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/tempreg16.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/tempreg8.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/tempreg3.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/tempreg1+flag_en.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/signextender9.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/signextender6.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/shifter7.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/registerfile.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/priorityencoder.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/pc.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/mux8.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/mux4.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/mux2.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/memory.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/ir.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/demux2.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/decoder.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/datapath.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/alu1.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro_3 Nov/alu.vhd}
+

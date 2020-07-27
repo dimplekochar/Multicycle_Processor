@@ -1,0 +1,213 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "IR_output[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[8]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[9]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[10]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[11]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[12]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[13]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[14]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_output[15]",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "Z",
+					"strict" : false
+				},
+				{
+					"name" : "Z_alu1",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[9]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[27]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[14]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[15]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[16]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[20]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[22]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[12]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[23]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[3]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[2]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[19]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[13]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[21]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[28]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[0]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[1]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[7]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[8]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[26]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[4]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[6]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[5]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[10]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[11]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[18]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[17]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[25]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[24]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[30]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

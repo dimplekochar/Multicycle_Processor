@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Ubuntu 16.04.5",
+		"os_version" : "16"
+	},
+	"error" : {
+		"executable" : "quartus_map",
+		"comment" : "not_applicable",
+		"error_message" : "cloned_sgate != 0",
+		"source_file" : "/quartus/synth/mls/mls_netlist.cpp",
+		"line" : "2025",
+		"stack_trace" : "\t0x7f9077ae74c7: synth_mls + 0x4a4c7 (_Z20opt_get_cloned_otermP15CDB_SGATE_OTERM + 0x54)\n\t0x7f9077aed36d: synth_mls + 0x5036d (_Z16opt_clean_signalP17CDB_SGATE_NETLISTP15CDB_SGATE_LATCHRKSt6vectorIP15CDB_SGATE_ITERMSaIS5_EEP15CDB_SGATE_OTERMbPi + 0x6a8)\n\t0x7f9077aed7c0: synth_mls + 0x507c0 (_ZN11MLS_NETLIST11clean_latchEP15CDB_SGATE_LATCHPi + 0x18c)\n\t0x7f9077b6be95: synth_mls + 0xcee95 (_ZN11MLS_NETLIST20clean_filthy_latchesEv + 0x115)\n\t0x7f9077b99d01: synth_mls + 0xfcd01 (_ZN11MLS_NETLIST16clean_up_latchesEb + 0x61)\n\t0x7f9077b85875: synth_mls + 0xe8875 (_ZN11MLS_NETLIST19call_named_functionERKSsS1_S1_ + 0xde5)\n\t0x7f9077b88d1c: synth_mls + 0xebd1c (_ZN11MLS_NETLIST10run_scriptEN18MLS_SCRIPT_MANAGER11SCRIPT_TYPEERKSsP15MLS_SCRIPT_STEPS5_ + 0x6dc)\n\t0x7f9077ae60e3: synth_mls + 0x490e3 (_ZN8MLS_ROOT22start_from_mls_netlistEPP11MLS_NETLISTN18MLS_SCRIPT_MANAGER11SCRIPT_TYPEE + 0x47)\n\t0x7f907ddbec4d: synth_scl + 0xa8c4d (_ZN12SCL_SYN_HIER22synthesize_with_scriptEPP11MLS_NETLISTP17CDB_SGATE_NETLISTRKN18MLS_SCRIPT_MANAGER11SCRIPT_TYPEEPP16CDB_ATOM_NETLIST + 0x16f)\n\t0x7f907ddc349b: synth_scl + 0xad49b (_ZN12SCL_SYN_HIER16work_normal_flowEv + 0x659)\n\t0x7f907ddc3695: synth_scl + 0xad695 (_ZN12SCL_SYN_HIER4workEv + 0x1b)\n\t0x7f907dd93ba0: synth_scl + 0x7dba0 (_ZN13SCL_SYN_STATE21process_one_hierarchyEP19CDB_SGATE_HIERARCHYPP16CDB_ATOM_NETLIST + 0x78)\n\t0x7f907dd9428b: synth_scl + 0x7e28b (_ZN13SCL_SYN_STATE17synthesize_designEv + 0x529)\n\t0x7f907dd948e4: synth_scl + 0x7e8e4 (_Z15scl_execute_synP10CMP_FACADE + 0x6c)\n\t0x7f907dd6c944: synth_scl + 0x56944 (_Z23scl_execute_normal_flowP10CMP_FACADEb + 0x118)\n\t0x7f907dd6d54c: synth_scl + 0x5754c (_Z9scl_startP10CMP_FACADEb + 0x55)\n\t   0x41c907: quartus_map + 0x1c907 (_Z16qsyn_execute_sclP14QSYN_FRAMEWORKP13IDU_PARTITIONb + 0x167)\n\t   0x432058: quartus_map + 0x32058 (_ZN14QSYN_FRAMEWORK13scl_iterationEv + 0x6f8)\n\t   0x437b3c: quartus_map + 0x37b3c (_ZN14QSYN_FRAMEWORK12execute_coreEP14THR_NAMED_PIPES1_ + 0x43c)\n\t   0x43b62c: quartus_map + 0x3b62c (_ZN14QSYN_FRAMEWORK7executeEv + 0xc3c)\n\t0x7f906adf866b: comp_qexe + 0x1c66b (_Z18qexe_standard_mainP14QEXE_FRAMEWORKPPK22QEXE_OPTION_DEFINITIONiPPKc + 0x888)\n\t   0x43020c: quartus_map + 0x3020c (_Z9qsyn_mainiPPKc + 0x13c)\n\t0x7f903639b360: ccl_msg + 0x40360 (_Z15msg_main_threadPv + 0x10)\n\t0x7f90336ff02c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)\n\t0x7f903639b41c: ccl_msg + 0x4041c (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7f9033d6f359: ccl_mem + 0xb359 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)\n\t0x7f9033b3bf98: ccl_err + 0x8f98 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7f90336ff3f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)\n\t0x7f903639d622: ccl_msg + 0x42622 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)\n\t0x7f902e2d2830: c.so.6 + 0x20830 (__libc_start_main + 0xf0)\n\t   0x415225: quartus_map + 0x15225\n",
+		"subsystem" : "MLS"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "16.0.0",
+		"build" : "211",
+		"edition" : "Lite Edition"
+	}
+}

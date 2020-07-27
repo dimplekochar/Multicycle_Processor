@@ -1,0 +1,233 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -15.593
+TNS   : -503.455
+
+Type  : Slow 1200mV 85C Model Setup 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : -15.077
+TNS   : -389.358
+
+Type  : Slow 1200mV 85C Model Setup 'statetable1:fsm|state.s0'
+Slack : -14.864
+TNS   : -1115.370
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -13.951
+TNS   : -6877.057
+
+Type  : Slow 1200mV 85C Model Setup 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -10.330
+TNS   : -243.756
+
+Type  : Slow 1200mV 85C Model Hold 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -4.259
+TNS   : -62.594
+
+Type  : Slow 1200mV 85C Model Hold 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : -4.067
+TNS   : -53.356
+
+Type  : Slow 1200mV 85C Model Hold 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -3.952
+TNS   : -118.383
+
+Type  : Slow 1200mV 85C Model Hold 'statetable1:fsm|state.s0'
+Slack : -3.341
+TNS   : -76.592
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.976
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -4.226
+TNS   : -54.785
+
+Type  : Slow 1200mV 85C Model Recovery 'statetable1:fsm|state.s0'
+Slack : -2.990
+TNS   : -9.585
+
+Type  : Slow 1200mV 85C Model Removal 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -3.848
+TNS   : -54.746
+
+Type  : Slow 1200mV 85C Model Removal 'statetable1:fsm|state.s0'
+Slack : 0.653
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -687.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'statetable1:fsm|state.s0'
+Slack : -2.808
+TNS   : -196.581
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -0.848
+TNS   : -125.433
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : -0.071
+TNS   : -0.938
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -0.039
+TNS   : -0.333
+
+Type  : Slow 1200mV 0C Model Setup 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -13.964
+TNS   : -453.312
+
+Type  : Slow 1200mV 0C Model Setup 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : -13.602
+TNS   : -353.098
+
+Type  : Slow 1200mV 0C Model Setup 'statetable1:fsm|state.s0'
+Slack : -13.403
+TNS   : -995.365
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -12.358
+TNS   : -6047.989
+
+Type  : Slow 1200mV 0C Model Setup 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -9.284
+TNS   : -218.244
+
+Type  : Slow 1200mV 0C Model Hold 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -3.814
+TNS   : -52.412
+
+Type  : Slow 1200mV 0C Model Hold 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : -3.576
+TNS   : -43.912
+
+Type  : Slow 1200mV 0C Model Hold 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -3.418
+TNS   : -102.939
+
+Type  : Slow 1200mV 0C Model Hold 'statetable1:fsm|state.s0'
+Slack : -2.976
+TNS   : -64.929
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -3.790
+TNS   : -49.460
+
+Type  : Slow 1200mV 0C Model Recovery 'statetable1:fsm|state.s0'
+Slack : -2.749
+TNS   : -8.881
+
+Type  : Slow 1200mV 0C Model Removal 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -3.457
+TNS   : -47.990
+
+Type  : Slow 1200mV 0C Model Removal 'statetable1:fsm|state.s0'
+Slack : 0.773
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -687.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'statetable1:fsm|state.s0'
+Slack : -2.422
+TNS   : -172.745
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -0.574
+TNS   : -102.318
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -8.623
+TNS   : -273.115
+
+Type  : Fast 1200mV 0C Model Setup 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : -8.158
+TNS   : -207.351
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -8.098
+TNS   : -3917.945
+
+Type  : Fast 1200mV 0C Model Setup 'statetable1:fsm|state.s0'
+Slack : -8.051
+TNS   : -608.310
+
+Type  : Fast 1200mV 0C Model Setup 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -5.657
+TNS   : -133.732
+
+Type  : Fast 1200mV 0C Model Hold 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : -2.488
+TNS   : -34.209
+
+Type  : Fast 1200mV 0C Model Hold 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -2.486
+TNS   : -39.076
+
+Type  : Fast 1200mV 0C Model Hold 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -2.380
+TNS   : -71.538
+
+Type  : Fast 1200mV 0C Model Hold 'statetable1:fsm|state.s0'
+Slack : -1.958
+TNS   : -51.202
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.803
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -2.233
+TNS   : -22.687
+
+Type  : Fast 1200mV 0C Model Recovery 'statetable1:fsm|state.s0'
+Slack : -1.442
+TNS   : -3.921
+
+Type  : Fast 1200mV 0C Model Removal 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : -2.320
+TNS   : -34.516
+
+Type  : Fast 1200mV 0C Model Removal 'statetable1:fsm|state.s0'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -789.509
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'statetable1:fsm|state.s0'
+Slack : -1.450
+TNS   : -90.672
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'datapath:total_flow|tempreg8:t4|dout[0]'
+Slack : -0.499
+TNS   : -41.748
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'datapath:total_flow|ir:instr_reg|dout[12]'
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'datapath:total_flow|ir:instr_reg|dout[13]'
+Slack : 0.110
+TNS   : 0.000
+
+------------------------------------------------------------

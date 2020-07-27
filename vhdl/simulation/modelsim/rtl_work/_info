@@ -1,0 +1,1375 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/dimple/Downloads/Micro-21 Nov/simulation/modelsim
+Eadd
+Z1 w1542925217
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/home/dimple/Downloads/Micro-21 Nov/alu1.vhd
+Z6 F/home/dimple/Downloads/Micro-21 Nov/alu1.vhd
+l0
+L38
+VZ0<2g`oDLEc]`KX6`miN:3
+!s100 mJCNJW4FGFlGj<Ud20:[]2
+Z7 OV;C;10.4d;61
+31
+Z8 !s110 1542930669
+!i10b 1
+Z9 !s108 1542930669.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/alu1.vhd|
+Z11 !s107 /home/dimple/Downloads/Micro-21 Nov/alu1.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Abehave
+R2
+R3
+R4
+DEx4 work 3 add 0 22 Z0<2g`oDLEc]`KX6`miN:3
+l42
+L41
+VTzmPlGZ517IRakAeU3:>V0
+!s100 _He]l==;mDzLO7mbD;RHl0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eadd1
+Z14 w1541452760
+R2
+R3
+R4
+R0
+Z15 8/home/dimple/Downloads/Micro-21 Nov/alu.vhd
+Z16 F/home/dimple/Downloads/Micro-21 Nov/alu.vhd
+l0
+L44
+V=<j8Ee[IoLaYFOLI>7MFz3
+!s100 Y@=FV>Y4`SC^QJMH?k[1n1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/alu.vhd|
+Z18 !s107 /home/dimple/Downloads/Micro-21 Nov/alu.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 4 add1 0 22 =<j8Ee[IoLaYFOLI>7MFz3
+l48
+L47
+VToS9_Z8<50o;TD=2FF==^1
+!s100 zma0@Ak:=UQ@LlLj9MgY>0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eadder16
+R14
+Z19 DPx4 work 4 lab1 0 22 Y3CaXGH90mPdC_6jR03VP2
+R2
+R3
+R4
+R0
+R15
+R16
+l0
+L74
+V9F9N=aoWM9on<8TV]4Nl80
+!s100 ^d37znD^7^MLZ1eZ;mnl=3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Abehave
+R19
+R2
+R3
+R4
+DEx4 work 7 adder16 0 22 9F9N=aoWM9on<8TV]4Nl80
+l86
+L79
+V^k]o[m[TDfDAncD?<OSR12
+!s100 W[9aILJW9jC[OZc`E=Ll]1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eadder8
+R1
+Z20 DPx4 work 3 lab 0 22 I[PLo<WOl;eZ1nB=D_Ij<0
+R2
+R3
+R4
+R0
+R5
+R6
+l0
+L68
+VVR4LfXeiST7Uo@SPc2QBo3
+!s100 I7NWe^NPlV;TLMoKm>9lC0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehave
+R20
+R2
+R3
+R4
+DEx4 work 6 adder8 0 22 VR4LfXeiST7Uo@SPc2QBo3
+l75
+L73
+VmmKe]A0D[OXlE76NoLjk53
+!s100 c1@zUc01CH^^OOIDX8oYb3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+R14
+R19
+R2
+R3
+R4
+R0
+R15
+R16
+l0
+L210
+VhH:2_>BQ8UJNhEJhh4`_N1
+!s100 gd9jmAJkP]^akGFd`=3a13
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Astruct
+R19
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 hH:2_>BQ8UJNhEJhh4`_N1
+l229
+L219
+VW]>i@NKfo0d>63X@cenXK2
+!s100 VGQJ>FdDz5F[B>NL^Xl4D0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ealu1
+R1
+R20
+R2
+R3
+R4
+R0
+R5
+R6
+l0
+L133
+V95N11GmjF8A>agZTbNQDb0
+!s100 O^9TVKQGAUj2m`PIoiU6V0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Astruct
+R20
+R2
+R3
+R4
+DEx4 work 4 alu1 0 22 95N11GmjF8A>agZTbNQDb0
+l143
+L141
+VTTi:Gkj8eMM1XglWZ@HG91
+!s100 RLh_2<YhnYZmgl:1H:J=R3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edatapath
+Z21 w1542926063
+R3
+R4
+R0
+Z22 8/home/dimple/Downloads/Micro-21 Nov/datapath.vhd
+Z23 F/home/dimple/Downloads/Micro-21 Nov/datapath.vhd
+l0
+L9
+VzVVi5M9oAlD=@[k?DbT263
+!s100 1Pfl7^zN]V`>VZI<eJOb31
+R7
+31
+R8
+!i10b 1
+Z24 !s108 1542930668.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/datapath.vhd|
+Z26 !s107 /home/dimple/Downloads/Micro-21 Nov/datapath.vhd|
+!i113 1
+R12
+R13
+Abehave
+R3
+R4
+DEx4 work 8 datapath 0 22 zVVi5M9oAlD=@[k?DbT263
+l233
+L18
+V]C?[]Kbb6dcnLi>iN^;gL3
+!s100 D9V883^L>f?3H1Z=oTUKQ3
+R7
+31
+R8
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13
+Edecoder
+Z27 w1542930243
+R2
+R3
+R4
+R0
+Z28 8/home/dimple/Downloads/Micro-21 Nov/decoder.vhd
+Z29 F/home/dimple/Downloads/Micro-21 Nov/decoder.vhd
+l0
+L6
+V;c<4M[6HaID7^F69O:z:10
+!s100 ??aQ?3N5o:M>6WA6kazJj1
+R7
+31
+Z30 !s110 1542930668
+!i10b 1
+R24
+Z31 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/decoder.vhd|
+Z32 !s107 /home/dimple/Downloads/Micro-21 Nov/decoder.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 7 decoder 0 22 ;c<4M[6HaID7^F69O:z:10
+l14
+L13
+V;9c?>[nX9O?0@UR?FgkNn2
+!s100 e^@ln_kC=fa^DezhaX=@:2
+R7
+31
+R30
+!i10b 1
+R24
+R31
+R32
+!i113 1
+R12
+R13
+Edemux2
+Z33 w1540972182
+R2
+R3
+R4
+R0
+Z34 8/home/dimple/Downloads/Micro-21 Nov/demux2.vhd
+Z35 F/home/dimple/Downloads/Micro-21 Nov/demux2.vhd
+l0
+L7
+VhkKaXFHYWU[bIP>z^an@P3
+!s100 9iR:8A`MPmKe>eIW9c6cH3
+R7
+31
+R30
+!i10b 1
+R24
+Z36 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/demux2.vhd|
+Z37 !s107 /home/dimple/Downloads/Micro-21 Nov/demux2.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 6 demux2 0 22 hkKaXFHYWU[bIP>z^an@P3
+l18
+L17
+Ve=85j@7E[;JPnf13<:>eM1
+!s100 a1Bl=k38cgPBeZWJkjdF71
+R7
+31
+R30
+!i10b 1
+R24
+R36
+R37
+!i113 1
+R12
+R13
+Eir
+Z38 w1541372334
+R2
+R3
+R4
+R0
+Z39 8/home/dimple/Downloads/Micro-21 Nov/ir.vhd
+Z40 F/home/dimple/Downloads/Micro-21 Nov/ir.vhd
+l0
+L7
+VJ^g[jn<E1<UnkiG]jXoIX2
+!s100 M=8@6M;Z3<Y73=R<K^T0F2
+R7
+31
+R30
+!i10b 1
+R24
+Z41 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/ir.vhd|
+Z42 !s107 /home/dimple/Downloads/Micro-21 Nov/ir.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 2 ir 0 22 J^g[jn<E1<UnkiG]jXoIX2
+l15
+L14
+V<eQQ^MzYQ24@M>OUV]EH40
+!s100 0dK@543TA4<Rozg@`LJVm0
+R7
+31
+R30
+!i10b 1
+R24
+R41
+R42
+!i113 1
+R12
+R13
+Plab
+R3
+R4
+R1
+R0
+R5
+R6
+l0
+L5
+VI[PLo<WOl;eZ1nB=D_Ij<0
+!s100 XGY1Z`0SQbR36`E]m8h3>3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Plab1
+R2
+R3
+R4
+R14
+R0
+R15
+R16
+l0
+L6
+VY3CaXGH90mPdC_6jR03VP2
+!s100 KFJXJ8KnfeCnJj;jn6WR@3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ememory
+Z43 w1542928819
+R2
+R3
+R4
+R0
+Z44 8/home/dimple/Downloads/Micro-21 Nov/memory.vhd
+Z45 F/home/dimple/Downloads/Micro-21 Nov/memory.vhd
+l0
+L6
+VMPf=:FnFUajRElHiI<[O?3
+!s100 ]L;Fk1CzeJaf<E>D9?9c11
+R7
+31
+R30
+!i10b 1
+R24
+Z46 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/memory.vhd|
+Z47 !s107 /home/dimple/Downloads/Micro-21 Nov/memory.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 6 memory 0 22 MPf=:FnFUajRElHiI<[O?3
+l22
+L19
+V`?WdFTj<>j;a[>c1Ym<f[0
+!s100 EZUC9YF5LV_<gcG6RDkHa0
+R7
+31
+R30
+!i10b 1
+R24
+R46
+R47
+!i113 1
+R12
+R13
+Emux0
+R1
+R2
+R3
+R4
+R0
+R5
+R6
+l0
+L53
+VzK>oea18BeWL5e@nR`LT03
+!s100 cMeQ02Wm^I9Z@zIC82Y4n0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 4 mux0 0 22 zK>oea18BeWL5e@nR`LT03
+l58
+L57
+V4DXzAYK0kf9WgX7b<^C2h1
+!s100 1RUoU:O532<3gSgPLzAf`3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Emux1
+R14
+R2
+R3
+R4
+R0
+R15
+R16
+l0
+L59
+Vh7o7F?9bbTgKIe;PXO3=n0
+!s100 h@aTB4k85IIY8oTF_<^FA2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 4 mux1 0 22 h7o7F?9bbTgKIe;PXO3=n0
+l64
+L63
+VmmTHX:9RDSB3NN126nABo2
+!s100 DUAGB6HonOlUYM9Noa<6b0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Emux2
+Z48 w1540926974
+R2
+R3
+R4
+R0
+Z49 8/home/dimple/Downloads/Micro-21 Nov/mux2.vhd
+Z50 F/home/dimple/Downloads/Micro-21 Nov/mux2.vhd
+l0
+L7
+VKB9dIhzLYD:H<JRbo2SH`0
+!s100 WD`=H7ULo:A<Xi>jjdW^k2
+R7
+31
+R30
+!i10b 1
+R24
+Z51 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/mux2.vhd|
+Z52 !s107 /home/dimple/Downloads/Micro-21 Nov/mux2.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 4 mux2 0 22 KB9dIhzLYD:H<JRbo2SH`0
+l19
+L18
+Vj?>;CkHCh?eH@_NK><l^]3
+!s100 Yn=`JCFGlBz69gHlZKIHK1
+R7
+31
+R30
+!i10b 1
+R24
+R51
+R52
+!i113 1
+R12
+R13
+Emux4
+Z53 w1541140395
+R2
+R3
+R4
+R0
+Z54 8/home/dimple/Downloads/Micro-21 Nov/mux4.vhd
+Z55 F/home/dimple/Downloads/Micro-21 Nov/mux4.vhd
+l0
+L7
+VIXMldRSM@ne2ffC]::0zj3
+!s100 >i^=RX:HTifcn2;H>YEQO2
+R7
+31
+R30
+!i10b 1
+R24
+Z56 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/mux4.vhd|
+Z57 !s107 /home/dimple/Downloads/Micro-21 Nov/mux4.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 4 mux4 0 22 IXMldRSM@ne2ffC]::0zj3
+l21
+L20
+V`Bz51iB=7Z56gHILJeT_N2
+!s100 E]9MTjjalZU:R8gaX8M]K2
+R7
+31
+R30
+!i10b 1
+R24
+R56
+R57
+!i113 1
+R12
+R13
+Emux8
+Z58 w1541140329
+R2
+R3
+R4
+R0
+Z59 8/home/dimple/Downloads/Micro-21 Nov/mux8.vhd
+Z60 F/home/dimple/Downloads/Micro-21 Nov/mux8.vhd
+l0
+L7
+VCJO6fEMWV@gBXW>J]l@5c2
+!s100 ok@fgS0oQ7;H7^F2>GBei1
+R7
+31
+R30
+!i10b 1
+R24
+Z61 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/mux8.vhd|
+Z62 !s107 /home/dimple/Downloads/Micro-21 Nov/mux8.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 4 mux8 0 22 CJO6fEMWV@gBXW>J]l@5c2
+l26
+L25
+VmZYhGgM38KHTzJ:nn`2MQ0
+!s100 l:i^nZFffg]<RzW<F3cVd1
+R7
+31
+R30
+!i10b 1
+R24
+R61
+R62
+!i113 1
+R12
+R13
+Enand16
+R14
+R19
+R2
+R3
+R4
+R0
+R15
+R16
+l0
+L165
+VW]I]0jMN]AM@J2BKKNM1g2
+!s100 4GS6iLFEXU8[XMEh8Kj=Y3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Abehave
+R19
+R2
+R3
+R4
+DEx4 work 6 nand16 0 22 W]I]0jMN]AM@J2BKKNM1g2
+l172
+L170
+VP=f]9ScYI_91Aj:zlUi470
+!s100 Saz4RAl>P[z]bFI7K9mOl3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Epc
+Z63 w1541372543
+R2
+R3
+R4
+R0
+Z64 8/home/dimple/Downloads/Micro-21 Nov/pc.vhd
+Z65 F/home/dimple/Downloads/Micro-21 Nov/pc.vhd
+l0
+L7
+V;RTg@FCkVQ3_NOT?odkPd0
+!s100 1D`;:X0;Ol7RJAQjgbn=<0
+R7
+31
+R30
+!i10b 1
+R24
+Z66 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/pc.vhd|
+Z67 !s107 /home/dimple/Downloads/Micro-21 Nov/pc.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 2 pc 0 22 ;RTg@FCkVQ3_NOT?odkPd0
+l15
+L14
+VM]eo]EHENXjRZBcZEhfM]0
+!s100 k68ZHIHghFL4AF15`MeW@2
+R7
+31
+R30
+!i10b 1
+R24
+R66
+R67
+!i113 1
+R12
+R13
+Epriorityencoder
+Z68 w1542930190
+R2
+R3
+R4
+R0
+Z69 8/home/dimple/Downloads/Micro-21 Nov/priorityencoder.vhd
+Z70 F/home/dimple/Downloads/Micro-21 Nov/priorityencoder.vhd
+l0
+L6
+Vj?RBXS];C8X4HU11DXS_H1
+!s100 SE^IeFG9l8PR86jfI6f7R0
+R7
+31
+R30
+!i10b 1
+R24
+Z71 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/priorityencoder.vhd|
+Z72 !s107 /home/dimple/Downloads/Micro-21 Nov/priorityencoder.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 15 priorityencoder 0 22 j?RBXS];C8X4HU11DXS_H1
+l14
+L13
+VN;=VbeQOz7TSd7z_WORA^0
+!s100 5K=?>]^mZ?8VNaNEjLeSW2
+R7
+31
+R30
+!i10b 1
+R24
+R71
+R72
+!i113 1
+R12
+R13
+Eregisterfile
+Z73 w1542922765
+R2
+R3
+R4
+R0
+Z74 8/home/dimple/Downloads/Micro-21 Nov/registerfile.vhd
+Z75 F/home/dimple/Downloads/Micro-21 Nov/registerfile.vhd
+l0
+L7
+VbzEo>ebV5PIod6HOH5]>C2
+!s100 QI4kd:IE:Ih]3j8RhZXm@0
+R7
+31
+R30
+!i10b 1
+R24
+Z76 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/registerfile.vhd|
+Z77 !s107 /home/dimple/Downloads/Micro-21 Nov/registerfile.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 12 registerfile 0 22 bzEo>ebV5PIod6HOH5]>C2
+l25
+L22
+VJlZaCLEGT`l7kbP_e=NK51
+!s100 jaD<Wl3_T@>MZB@[L]LJL0
+R7
+31
+R30
+!i10b 1
+R24
+R76
+R77
+!i113 1
+R12
+R13
+Erisc
+Z78 w1542835477
+R3
+R4
+R0
+Z79 8/home/dimple/Downloads/Micro-21 Nov/RISC.vhd
+Z80 F/home/dimple/Downloads/Micro-21 Nov/RISC.vhd
+l0
+L9
+VET;eo13?h0o34X[WBk^=h0
+!s100 []?n<6bmM55mPz7m?nU9c2
+R7
+31
+R30
+!i10b 1
+R24
+Z81 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/RISC.vhd|
+Z82 !s107 /home/dimple/Downloads/Micro-21 Nov/RISC.vhd|
+!i113 1
+R12
+R13
+Abehave
+R3
+R4
+DEx4 work 4 risc 0 22 ET;eo13?h0o34X[WBk^=h0
+l75
+L19
+V@XloHzQGn1XDEnGoWl88f0
+!s100 NlUWLlcM:^hkB;WQHA92F0
+R7
+31
+R30
+!i10b 1
+R24
+R81
+R82
+!i113 1
+R12
+R13
+Eshifter7
+Z83 w1540643730
+R2
+R3
+R4
+R0
+Z84 8/home/dimple/Downloads/Micro-21 Nov/shifter7.vhd
+Z85 F/home/dimple/Downloads/Micro-21 Nov/shifter7.vhd
+l0
+L7
+VGKTcGoOd2am?=6hHhk4iB1
+!s100 `?AE<Rej7KZ?A[Q9SW`1L3
+R7
+31
+R30
+!i10b 1
+R24
+Z86 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/shifter7.vhd|
+Z87 !s107 /home/dimple/Downloads/Micro-21 Nov/shifter7.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 8 shifter7 0 22 GKTcGoOd2am?=6hHhk4iB1
+l15
+L13
+VgV4Sd;`ALHJHdASh4^n4@1
+!s100 KT@fMM>iZ:5i7C6zc0?4`2
+R7
+31
+R30
+!i10b 1
+R24
+R86
+R87
+!i113 1
+R12
+R13
+Esignextender6
+Z88 w1540651184
+R2
+R3
+R4
+R0
+Z89 8/home/dimple/Downloads/Micro-21 Nov/signextender6.vhd
+Z90 F/home/dimple/Downloads/Micro-21 Nov/signextender6.vhd
+l0
+L7
+VSOQ1V:9<J;GA?Go<XSRYh1
+!s100 i`dnhhDB2l[4zmA<]^n_<2
+R7
+31
+R30
+!i10b 1
+R24
+Z91 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/signextender6.vhd|
+Z92 !s107 /home/dimple/Downloads/Micro-21 Nov/signextender6.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 13 signextender6 0 22 SOQ1V:9<J;GA?Go<XSRYh1
+l16
+L14
+V5eL>fM0Y^7he;4HdYO[IM2
+!s100 L9DKJ?Y[<X?bFGzdFl6me0
+R7
+31
+R30
+!i10b 1
+R24
+R91
+R92
+!i113 1
+R12
+R13
+Esignextender9
+Z93 w1540651195
+R2
+R3
+R4
+R0
+Z94 8/home/dimple/Downloads/Micro-21 Nov/signextender9.vhd
+Z95 F/home/dimple/Downloads/Micro-21 Nov/signextender9.vhd
+l0
+L7
+VLd7h_NK3d7GXg52IPIhCV0
+!s100 1L[JE>_JIBUhP_CnjZS`>3
+R7
+31
+R30
+!i10b 1
+R24
+Z96 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/signextender9.vhd|
+Z97 !s107 /home/dimple/Downloads/Micro-21 Nov/signextender9.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 13 signextender9 0 22 Ld7h_NK3d7GXg52IPIhCV0
+l16
+L14
+VJa[4RZB37>oA_A5PzMlMX3
+!s100 SZ:MLQJG6fA_35k_G<GnG0
+R7
+31
+R30
+!i10b 1
+R24
+R96
+R97
+!i113 1
+R12
+R13
+Estatetable1
+Z98 w1542930282
+R2
+R3
+R4
+R0
+Z99 8/home/dimple/Downloads/Micro-21 Nov/next-state.vhd
+Z100 F/home/dimple/Downloads/Micro-21 Nov/next-state.vhd
+l0
+L7
+Vb8g`a16_g14aN^@IRhVYE2
+!s100 8A_a;W7c?FlbePie4hD5J1
+R7
+31
+R30
+!i10b 1
+R24
+Z101 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/next-state.vhd|
+Z102 !s107 /home/dimple/Downloads/Micro-21 Nov/next-state.vhd|
+!i113 1
+R12
+R13
+Astatetable
+R2
+R3
+R4
+DEx4 work 11 statetable1 0 22 b8g`a16_g14aN^@IRhVYE2
+l27
+L22
+VVR5ZV6a^hY_zW7bnJ0R3S2
+!s100 ]k[<6Ef6C3EB@ekA1ea@?1
+R7
+31
+R30
+!i10b 1
+R24
+R101
+R102
+!i113 1
+R12
+R13
+Esubtracter16
+R14
+R19
+R2
+R3
+R4
+R0
+R15
+R16
+l0
+L123
+V^77icUT[giUH]Sa4l[VHn3
+!s100 K;74z]^6=FUz51EJE@54X3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Abehave
+R19
+R2
+R3
+R4
+DEx4 work 12 subtracter16 0 22 ^77icUT[giUH]Sa4l[VHn3
+l138
+L128
+VmZICdWgZ15<SiJlLKWYj?1
+!s100 mY`:<B4V`K60<UL58]U^43
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Esubtracter8
+R1
+R20
+R2
+R3
+R4
+R0
+R5
+R6
+l0
+L105
+Vd3WE3Nn9K7mc8WDdW1jh]2
+!s100 DGam9b_UJn<5nb9WAF93]3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Abehave
+R20
+R2
+R3
+R4
+DEx4 work 11 subtracter8 0 22 d3WE3Nn9K7mc8WDdW1jh]2
+l113
+L110
+V^8W[5ePWfo2B:EM_3MAbf3
+!s100 lAK_O8GG;W5D4OzE7FAhP3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etempreg1
+Z103 w1541372228
+R2
+R3
+R4
+R0
+Z104 8/home/dimple/Downloads/Micro-21 Nov/tempreg1+flag_en.vhd
+Z105 F/home/dimple/Downloads/Micro-21 Nov/tempreg1+flag_en.vhd
+l0
+L7
+VSY2OQOg2o[B[n>c2_2jkl0
+!s100 liOnJ<V[W<TzmjUTO1Y5X2
+R7
+31
+R30
+!i10b 1
+R24
+Z106 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/tempreg1+flag_en.vhd|
+Z107 !s107 /home/dimple/Downloads/Micro-21 Nov/tempreg1+flag_en.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 8 tempreg1 0 22 SY2OQOg2o[B[n>c2_2jkl0
+l16
+L15
+V<MbkXWEohSHHh94<;iQOe0
+!s100 oGm_hK`d2Tc0M>kT_E1JV3
+R7
+31
+R30
+!i10b 1
+R24
+R106
+R107
+!i113 1
+R12
+R13
+Etempreg16
+Z108 w1542877109
+R2
+R3
+R4
+R0
+Z109 8/home/dimple/Downloads/Micro-21 Nov/tempreg16.vhd
+Z110 F/home/dimple/Downloads/Micro-21 Nov/tempreg16.vhd
+l0
+L7
+Vz=6fXI85_CH5>0gLEOP253
+!s100 km1JWg>]]lKU1F;16CJmQ0
+R7
+31
+R30
+!i10b 1
+R24
+Z111 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/tempreg16.vhd|
+Z112 !s107 /home/dimple/Downloads/Micro-21 Nov/tempreg16.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 9 tempreg16 0 22 z=6fXI85_CH5>0gLEOP253
+l17
+L15
+V3A7dB>XUV415>g;<Aai2I0
+!s100 Gm[Y81JV[TQ33Fm]cQb_G2
+R7
+31
+R30
+!i10b 1
+R24
+R111
+R112
+!i113 1
+R12
+R13
+Etempreg3
+Z113 w1542923250
+R2
+R3
+R4
+R0
+Z114 8/home/dimple/Downloads/Micro-21 Nov/tempreg3.vhd
+Z115 F/home/dimple/Downloads/Micro-21 Nov/tempreg3.vhd
+l0
+L7
+V6^7KiWW=UYeX@?379kd8z3
+!s100 Cee@d@i@hdhWN>]>oBJJV0
+R7
+31
+R30
+!i10b 1
+R24
+Z116 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/tempreg3.vhd|
+Z117 !s107 /home/dimple/Downloads/Micro-21 Nov/tempreg3.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 8 tempreg3 0 22 6^7KiWW=UYeX@?379kd8z3
+l16
+L15
+V^=EPSD4VIHX>36eI60P3c3
+!s100 >cz@]Y[@Y[iRD5ZN>?FIj2
+R7
+31
+R30
+!i10b 1
+R24
+R116
+R117
+!i113 1
+R12
+R13
+Etempreg8
+Z118 w1542923232
+R2
+R3
+R4
+R0
+Z119 8/home/dimple/Downloads/Micro-21 Nov/tempreg8.vhd
+Z120 F/home/dimple/Downloads/Micro-21 Nov/tempreg8.vhd
+l0
+L7
+V[jR1@@^nA[1AR`KR3[m6j2
+!s100 41Xhm]K1KY6c0=cbaVfHL1
+R7
+31
+R30
+!i10b 1
+R24
+Z121 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/tempreg8.vhd|
+Z122 !s107 /home/dimple/Downloads/Micro-21 Nov/tempreg8.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 8 tempreg8 0 22 [jR1@@^nA[1AR`KR3[m6j2
+l16
+L15
+VVS2EXQWET6PWJD7IIRS0;3
+!s100 Q1?XZ3j68QhmDkfHkLh400
+R7
+31
+R30
+!i10b 1
+R24
+R121
+R122
+!i113 1
+R12
+R13
+Etempreg_alu1
+Z123 w1541371089
+R2
+R3
+R4
+R0
+Z124 8/home/dimple/Downloads/Micro-21 Nov/tempreg1_no_flag.vhd
+Z125 F/home/dimple/Downloads/Micro-21 Nov/tempreg1_no_flag.vhd
+l0
+L7
+VSnHnVGBOGaF<K9c<kC3IE1
+!s100 MY<`^4m;m0RfT7M35P:e`1
+R7
+31
+R30
+!i10b 1
+R24
+Z126 !s90 -reportprogress|300|-93|-work|work|/home/dimple/Downloads/Micro-21 Nov/tempreg1_no_flag.vhd|
+Z127 !s107 /home/dimple/Downloads/Micro-21 Nov/tempreg1_no_flag.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 12 tempreg_alu1 0 22 SnHnVGBOGaF<K9c<kC3IE1
+l16
+L15
+Vn2Xo2JOg`;cbAG^M^961T2
+!s100 9G5@CUaiDgB7c2=_h9OQD0
+R7
+31
+R30
+!i10b 1
+R24
+R126
+R127
+!i113 1
+R12
+R13

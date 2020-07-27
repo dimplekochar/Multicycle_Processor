@@ -1,0 +1,30 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/tempreg16.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/tempreg8.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/tempreg3.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/tempreg1+flag_en.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/signextender9.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/signextender6.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/shifter7.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/RISC.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/registerfile.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/priorityencoder.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/pc.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/next-state.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/mux8.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/mux4.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/mux2.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/memory.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/ir.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/demux2.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/decoder.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/datapath.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/alu1.vhd}
+vcom -93 -work work {/home/shivi/Documents/Sem5/EE309_Microprocessors/Micro_Project/Updated micro/alu.vhd}
+

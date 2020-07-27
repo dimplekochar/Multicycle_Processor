@@ -1,0 +1,1188 @@
+Analysis & Synthesis report for datapath
+Mon Nov  5 23:06:17 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: mux2:pc_mux
+ 14. Parameter Settings for User Entity Instance: mux4:memA_mux
+ 15. Parameter Settings for User Entity Instance: mux2:memD_mux
+ 16. Parameter Settings for User Entity Instance: mux2:a1_mux
+ 17. Parameter Settings for User Entity Instance: mux2:a2_mux
+ 18. Parameter Settings for User Entity Instance: mux4:a3_mux
+ 19. Parameter Settings for User Entity Instance: mux4:d3_mux
+ 20. Parameter Settings for User Entity Instance: mux8:t1_mux
+ 21. Parameter Settings for User Entity Instance: mux2:t2_mux
+ 22. Parameter Settings for User Entity Instance: mux2:t3_mux
+ 23. Parameter Settings for User Entity Instance: mux2:t4_mux
+ 24. Parameter Settings for User Entity Instance: mux4:aluA_mux
+ 25. Parameter Settings for User Entity Instance: mux8:aluB_mux
+ 26. Port Connectivity Checks: "memory:MEM"
+ 27. Port Connectivity Checks: "alu1:alu_8|subtracter8:subtractereight|adder8:a1|add:a0"
+ 28. Port Connectivity Checks: "alu1:alu_8|subtracter8:subtractereight|adder8:a1"
+ 29. Port Connectivity Checks: "alu1:alu_8"
+ 30. Port Connectivity Checks: "alu:alu_16|subtracter16:subtractersixteen|adder16:a1"
+ 31. Port Connectivity Checks: "alu:alu_16|adder16:addersixteen|add1:a0"
+ 32. Port Connectivity Checks: "registerfile:reg_file"
+ 33. Port Connectivity Checks: "mux8:aluB_mux"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Nov  5 23:06:17 2018       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; datapath                                    ;
+; Top-level Entity Name              ; datapath                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 1,835                                       ;
+;     Total combinational functions  ; 1,294                                       ;
+;     Dedicated logic registers      ; 656                                         ;
+; Total registers                    ; 656                                         ;
+; Total pins                         ; 52                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; datapath           ; datapath           ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; tempreg1_no_flag.vhd             ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/tempreg1_no_flag.vhd ;         ;
+; tempreg16.vhd                    ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/tempreg16.vhd        ;         ;
+; tempreg8.vhd                     ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/tempreg8.vhd         ;         ;
+; tempreg3.vhd                     ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/tempreg3.vhd         ;         ;
+; tempreg1+flag_en.vhd             ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/tempreg1+flag_en.vhd ;         ;
+; signextender9.vhd                ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/signextender9.vhd    ;         ;
+; signextender6.vhd                ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/signextender6.vhd    ;         ;
+; shifter7.vhd                     ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/shifter7.vhd         ;         ;
+; registerfile.vhd                 ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/registerfile.vhd     ;         ;
+; priorityencoder.vhd              ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/priorityencoder.vhd  ;         ;
+; pc.vhd                           ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/pc.vhd               ;         ;
+; mux8.vhd                         ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd             ;         ;
+; mux4.vhd                         ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd             ;         ;
+; mux2.vhd                         ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd             ;         ;
+; memory.vhd                       ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd           ;         ;
+; ir.vhd                           ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd               ;         ;
+; demux2.vhd                       ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd           ;         ;
+; decoder.vhd                      ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/decoder.vhd          ;         ;
+; datapath.vhd                     ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd         ;         ;
+; alu1.vhd                         ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd             ;         ;
+; alu.vhd                          ; yes             ; User VHDL File  ; /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd              ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 1,835     ;
+;                                             ;           ;
+; Total combinational functions               ; 1294      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 950       ;
+;     -- 3 input functions                    ; 239       ;
+;     -- <=2 input functions                  ; 105       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1278      ;
+;     -- arithmetic mode                      ; 16        ;
+;                                             ;           ;
+; Total registers                             ; 656       ;
+;     -- Dedicated logic registers            ; 656       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 52        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; RST~input ;
+; Maximum fan-out                             ; 770       ;
+; Total fan-out                               ; 7353      ;
+; Average fan-out                             ; 3.58      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name     ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
+; |datapath                              ; 1294 (0)          ; 656 (0)      ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |datapath                                                               ; datapath        ; work         ;
+;    |alu1:alu_8|                        ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8                                                    ; alu1            ; work         ;
+;       |subtracter8:subtractereight|    ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight                        ; subtracter8     ; work         ;
+;          |adder8:a1|                   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a1              ; adder8          ; work         ;
+;             |add:a1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a1|add:a1       ; add             ; work         ;
+;             |add:a2|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a1|add:a2       ; add             ; work         ;
+;             |add:a3|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a1|add:a3       ; add             ; work         ;
+;             |add:a6|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a1|add:a6       ; add             ; work         ;
+;          |adder8:a2|                   ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2              ; adder8          ; work         ;
+;             |add:a0|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a0       ; add             ; work         ;
+;             |add:a1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a1       ; add             ; work         ;
+;             |add:a2|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a2       ; add             ; work         ;
+;             |add:a3|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a3       ; add             ; work         ;
+;             |add:a4|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a4       ; add             ; work         ;
+;             |add:a5|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a5       ; add             ; work         ;
+;             |add:a6|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a6       ; add             ; work         ;
+;             |add:a7|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a7       ; add             ; work         ;
+;    |alu:alu_16|                        ; 155 (82)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16                                                    ; alu             ; work         ;
+;       |adder16:addersixteen|           ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|adder16:addersixteen                               ; adder16         ; work         ;
+;          |add1:a0|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|adder16:addersixteen|add1:a0                       ; add1            ; work         ;
+;          |add1:a1|                     ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|adder16:addersixteen|add1:a1                       ; add1            ; work         ;
+;       |subtracter16:subtractersixteen| ; 55 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen                     ; subtracter16    ; work         ;
+;          |adder16:a1|                  ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a1          ; adder16         ; work         ;
+;             |add1:a11|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a1|add1:a11 ; add1            ; work         ;
+;             |add1:a14|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a1|add1:a14 ; add1            ; work         ;
+;             |add1:a1|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a1|add1:a1  ; add1            ; work         ;
+;             |add1:a2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a1|add1:a2  ; add1            ; work         ;
+;             |add1:a5|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a1|add1:a5  ; add1            ; work         ;
+;             |add1:a8|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a1|add1:a8  ; add1            ; work         ;
+;          |adder16:a2|                  ; 49 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2          ; adder16         ; work         ;
+;             |add1:a10|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a10 ; add1            ; work         ;
+;             |add1:a11|                 ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a11 ; add1            ; work         ;
+;             |add1:a12|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a12 ; add1            ; work         ;
+;             |add1:a13|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a13 ; add1            ; work         ;
+;             |add1:a14|                 ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a14 ; add1            ; work         ;
+;             |add1:a15|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a15 ; add1            ; work         ;
+;             |add1:a1|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a1  ; add1            ; work         ;
+;             |add1:a2|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a2  ; add1            ; work         ;
+;             |add1:a3|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a3  ; add1            ; work         ;
+;             |add1:a4|                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a4  ; add1            ; work         ;
+;             |add1:a5|                  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a5  ; add1            ; work         ;
+;             |add1:a6|                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a6  ; add1            ; work         ;
+;             |add1:a7|                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a7  ; add1            ; work         ;
+;             |add1:a8|                  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a8  ; add1            ; work         ;
+;             |add1:a9|                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_16|subtracter16:subtractersixteen|adder16:a2|add1:a9  ; add1            ; work         ;
+;    |decoder:D|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|decoder:D                                                     ; decoder         ; work         ;
+;    |ir:instr_reg|                      ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ir:instr_reg                                                  ; ir              ; work         ;
+;    |memory:MEM|                        ; 607 (607)         ; 512 (512)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|memory:MEM                                                    ; memory          ; work         ;
+;    |mux2:a1_mux|                       ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux2:a1_mux                                                   ; mux2            ; work         ;
+;    |mux2:a2_mux|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux2:a2_mux                                                   ; mux2            ; work         ;
+;    |mux2:memD_mux|                     ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux2:memD_mux                                                 ; mux2            ; work         ;
+;    |mux2:pc_mux|                       ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux2:pc_mux                                                   ; mux2            ; work         ;
+;    |mux4:a3_mux|                       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux4:a3_mux                                                   ; mux4            ; work         ;
+;    |mux4:aluA_mux|                     ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux4:aluA_mux                                                 ; mux4            ; work         ;
+;    |mux4:d3_mux|                       ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux4:d3_mux                                                   ; mux4            ; work         ;
+;    |mux4:memA_mux|                     ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux4:memA_mux                                                 ; mux4            ; work         ;
+;    |mux8:aluB_mux|                     ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux8:aluB_mux                                                 ; mux8            ; work         ;
+;    |mux8:t1_mux|                       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux8:t1_mux                                                   ; mux8            ; work         ;
+;    |pc:Prog_counter|                   ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|pc:Prog_counter                                               ; pc              ; work         ;
+;    |priorityencoder:PE|                ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|priorityencoder:PE                                            ; priorityencoder ; work         ;
+;    |registerfile:reg_file|             ; 139 (139)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|registerfile:reg_file                                         ; registerfile    ; work         ;
+;    |tempreg16:t1|                      ; 56 (56)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg16:t1                                                  ; tempreg16       ; work         ;
+;    |tempreg16:t2|                      ; 86 (86)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg16:t2                                                  ; tempreg16       ; work         ;
+;    |tempreg16:t3|                      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg16:t3                                                  ; tempreg16       ; work         ;
+;    |tempreg1:carry_reg|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg1:carry_reg                                            ; tempreg1        ; work         ;
+;    |tempreg1:zero_reg|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg1:zero_reg                                             ; tempreg1        ; work         ;
+;    |tempreg3:t5|                       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg3:t5                                                   ; tempreg3        ; work         ;
+;    |tempreg8:t4|                       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg8:t4                                                   ; tempreg8        ; work         ;
+;    |tempreg8:t6|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg8:t6                                                   ; tempreg8        ; work         ;
+;    |tempreg_alu1:zero1_reg|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|tempreg_alu1:zero1_reg                                        ; tempreg_alu1    ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; ir:instr_reg|dout[0]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[1]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[2]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[3]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[4]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[5]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[6]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[7]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[8]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[9]                                ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[10]                               ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[11]                               ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[12]                               ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[13]                               ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[14]                               ; control_store[27]   ; yes                    ;
+; ir:instr_reg|dout[15]                               ; control_store[27]   ; yes                    ;
+; tempreg1:carry_reg|dout                             ; control_store[3]    ; yes                    ;
+; tempreg1:zero_reg|dout                              ; control_store[2]    ; yes                    ;
+; alu:alu_16|z[0]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|aluc                                     ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|aluz                                     ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[1]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; demux2:ir_demux|dout2[0]                            ; VCC                 ; yes                    ;
+; alu:alu_16|z[3]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[2]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[4]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[15]                                    ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[14]                                    ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[13]                                    ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[12]                                    ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[11]                                    ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[10]                                    ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[9]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; alu:alu_16|z[8]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; demux2:ir_demux|dout2[8]                            ; VCC                 ; yes                    ;
+; alu:alu_16|z[7]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; demux2:ir_demux|dout2[7]                            ; VCC                 ; yes                    ;
+; alu:alu_16|z[6]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; demux2:ir_demux|dout2[6]                            ; VCC                 ; yes                    ;
+; alu:alu_16|z[5]                                     ; alu:alu_16|z[15]    ; yes                    ;
+; demux2:ir_demux|dout2[5]                            ; VCC                 ; yes                    ;
+; demux2:ir_demux|dout2[4]                            ; VCC                 ; yes                    ;
+; demux2:ir_demux|dout2[3]                            ; VCC                 ; yes                    ;
+; demux2:ir_demux|dout2[2]                            ; VCC                 ; yes                    ;
+; demux2:ir_demux|dout2[1]                            ; VCC                 ; yes                    ;
+; Number of user-specified and inferred latches = 45  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                     ;
++-------------------------------------------------------------+----+
+; Logic Cell Name                                             ;    ;
++-------------------------------------------------------------+----+
+; tempreg8:t4|dout[1]~6                                       ;    ;
+; tempreg8:t4|dout[6]~1                                       ;    ;
+; alu1:alu_8|subtracter8:subtractereight|adder8:a2|add:a7|z~0 ;    ;
+; tempreg8:t4|dout[0]~0                                       ;    ;
+; tempreg8:t4|dout[5]~2                                       ;    ;
+; tempreg8:t4|dout[4]~3                                       ;    ;
+; tempreg8:t4|dout[3]~4                                       ;    ;
+; tempreg8:t4|dout[2]~5                                       ;    ;
+; memory:MEM|Mux15~0                                          ;    ;
+; mux4:memA_mux|dout[1]~3                                     ;    ;
+; mux4:memA_mux|dout[3]~1                                     ;    ;
+; mux4:memA_mux|dout[2]~2                                     ;    ;
+; mux4:memA_mux|dout[4]~0                                     ;    ;
+; Number of logic cells representing combinational loops      ; 13 ;
++-------------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 656   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 656   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 656   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; registerfile:reg_file|registers[7][0]   ; 3       ;
+; registerfile:reg_file|registers[0][0]   ; 3       ;
+; registerfile:reg_file|registers[3][0]   ; 3       ;
+; memory:MEM|mem[2][1]                    ; 2       ;
+; memory:MEM|mem[3][1]                    ; 2       ;
+; memory:MEM|mem[3][2]                    ; 2       ;
+; memory:MEM|mem[1][3]                    ; 1       ;
+; memory:MEM|mem[2][3]                    ; 1       ;
+; memory:MEM|mem[0][4]                    ; 2       ;
+; memory:MEM|mem[3][5]                    ; 2       ;
+; memory:MEM|mem[1][5]                    ; 2       ;
+; memory:MEM|mem[2][6]                    ; 1       ;
+; memory:MEM|mem[0][6]                    ; 1       ;
+; memory:MEM|mem[2][7]                    ; 2       ;
+; memory:MEM|mem[2][8]                    ; 2       ;
+; memory:MEM|mem[1][8]                    ; 2       ;
+; memory:MEM|mem[3][8]                    ; 2       ;
+; memory:MEM|mem[1][9]                    ; 2       ;
+; memory:MEM|mem[3][9]                    ; 2       ;
+; memory:MEM|mem[2][10]                   ; 2       ;
+; memory:MEM|mem[1][10]                   ; 2       ;
+; memory:MEM|mem[3][10]                   ; 2       ;
+; memory:MEM|mem[2][11]                   ; 2       ;
+; memory:MEM|mem[0][0]                    ; 1       ;
+; registerfile:reg_file|registers[4][1]   ; 2       ;
+; registerfile:reg_file|registers[7][1]   ; 2       ;
+; registerfile:reg_file|registers[0][1]   ; 2       ;
+; registerfile:reg_file|registers[3][1]   ; 2       ;
+; registerfile:reg_file|registers[7][2]   ; 2       ;
+; registerfile:reg_file|registers[3][2]   ; 2       ;
+; registerfile:reg_file|registers[6][3]   ; 2       ;
+; registerfile:reg_file|registers[4][3]   ; 2       ;
+; registerfile:reg_file|registers[7][3]   ; 2       ;
+; registerfile:reg_file|registers[3][3]   ; 2       ;
+; registerfile:reg_file|registers[7][4]   ; 2       ;
+; registerfile:reg_file|registers[3][4]   ; 2       ;
+; registerfile:reg_file|registers[6][5]   ; 2       ;
+; registerfile:reg_file|registers[4][5]   ; 2       ;
+; registerfile:reg_file|registers[7][5]   ; 2       ;
+; registerfile:reg_file|registers[3][5]   ; 2       ;
+; registerfile:reg_file|registers[7][6]   ; 2       ;
+; registerfile:reg_file|registers[3][6]   ; 2       ;
+; registerfile:reg_file|registers[6][7]   ; 2       ;
+; registerfile:reg_file|registers[4][7]   ; 2       ;
+; registerfile:reg_file|registers[7][7]   ; 2       ;
+; registerfile:reg_file|registers[3][7]   ; 2       ;
+; registerfile:reg_file|registers[6][8]   ; 2       ;
+; registerfile:reg_file|registers[7][8]   ; 2       ;
+; registerfile:reg_file|registers[3][8]   ; 2       ;
+; registerfile:reg_file|registers[6][9]   ; 2       ;
+; registerfile:reg_file|registers[7][9]   ; 2       ;
+; registerfile:reg_file|registers[3][9]   ; 2       ;
+; registerfile:reg_file|registers[6][10]  ; 2       ;
+; registerfile:reg_file|registers[7][10]  ; 2       ;
+; registerfile:reg_file|registers[3][10]  ; 2       ;
+; registerfile:reg_file|registers[7][11]  ; 2       ;
+; registerfile:reg_file|registers[3][11]  ; 2       ;
+; registerfile:reg_file|registers[3][12]  ; 2       ;
+; registerfile:reg_file|registers[6][13]  ; 2       ;
+; registerfile:reg_file|registers[4][13]  ; 2       ;
+; registerfile:reg_file|registers[7][13]  ; 2       ;
+; registerfile:reg_file|registers[3][13]  ; 2       ;
+; registerfile:reg_file|registers[4][14]  ; 2       ;
+; registerfile:reg_file|registers[6][15]  ; 2       ;
+; registerfile:reg_file|registers[4][15]  ; 2       ;
+; registerfile:reg_file|registers[7][15]  ; 2       ;
+; registerfile:reg_file|registers[3][15]  ; 2       ;
+; Total number of inverted registers = 67 ;         ;
++-----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |datapath|mux4:memA_mux|dout[1]       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |datapath|mux4:aluA_mux|dout[3]       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |datapath|mux4:d3_mux|dout[11]        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |datapath|mux4:a3_mux|dout[2]         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|tempreg8:t4|dout[2]         ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |datapath|tempreg16:t3|dout[4]        ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |datapath|registerfile:reg_file|Mux10 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_16|z[2]             ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |datapath|mux8:aluB_mux|dout[6]       ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; No         ; |datapath|mux8:aluB_mux|dout[2]       ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; No         ; |datapath|tempreg16:t1|dout[0]        ;
+; 32:1               ; 16 bits   ; 336 LEs       ; 336 LEs              ; 0 LEs                  ; No         ; |datapath|memory:MEM|Mux8             ;
+; 10:1               ; 10 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |datapath|tempreg16:t2|dout[6]        ;
+; 10:1               ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |datapath|tempreg16:t2|dout[3]        ;
+; 7:1                ; 9 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |datapath|tempreg16:t1|dout[15]       ;
+; 5:1                ; 11 bits   ; 33 LEs        ; 33 LEs               ; 0 LEs                  ; No         ; |datapath|mux4:aluA_mux|dout[15]      ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |datapath|tempreg3:t5|dout[1]         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:pc_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 16    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4:memA_mux ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; input_width    ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:memD_mux ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; input_width    ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:a1_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 3     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:a2_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 3     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4:a3_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 3     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4:d3_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 16    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux8:t1_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 16    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:t2_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 16    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:t3_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 16    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:t4_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; input_width    ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4:aluA_mux ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; input_width    ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux8:aluB_mux ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; input_width    ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memory:MEM"                                                                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; mem_check ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu1:alu_8|subtracter8:subtractereight|adder8:a1|add:a0" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; i    ; Input ; Info     ; Stuck at GND                                              ;
++------+-------+----------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu1:alu_8|subtracter8:subtractereight|adder8:a1"                                      ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; y[7..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; aluc    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; aluz    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu1:alu_8"                                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; aluc ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_16|subtracter16:subtractersixteen|adder16:a1"                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; y[15..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; y[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; aluc     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; aluz     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_16|adder16:addersixteen|add1:a0" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; i    ; Input ; Info     ; Stuck at GND                              ;
++------+-------+----------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registerfile:reg_file"                                                                ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; r0_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r1_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r2_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r3_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r5_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r4_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r6_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r7_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "mux8:aluB_mux"   ;
++-----------+-------+----------+--------------+
+; Port      ; Type  ; Severity ; Details      ;
++-----------+-------+----------+--------------+
+; d0[15..1] ; Input ; Info     ; Stuck at GND ;
+; d0[0]     ; Input ; Info     ; Stuck at VCC ;
+; d1[15..1] ; Input ; Info     ; Stuck at GND ;
+; d1[0]     ; Input ; Info     ; Stuck at VCC ;
+; d7        ; Input ; Info     ; Stuck at GND ;
++-----------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 52                          ;
+; cycloneiii_ff         ; 656                         ;
+;     ENA CLR           ; 656                         ;
+; cycloneiii_lcell_comb ; 1294                        ;
+;     arith             ; 16                          ;
+;         3 data inputs ; 16                          ;
+;     normal            ; 1278                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 67                          ;
+;         2 data inputs ; 37                          ;
+;         3 data inputs ; 223                         ;
+;         4 data inputs ; 950                         ;
+;                       ;                             ;
+; Max LUT depth         ; 25.00                       ;
+; Average LUT depth     ; 11.48                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:05     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Mon Nov  5 23:05:54 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file tempreg1_no_flag.vhd
+    Info (12022): Found design unit 1: tempreg_alu1-struct File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg1_no_flag.vhd Line: 15
+    Info (12023): Found entity 1: tempreg_alu1 File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg1_no_flag.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file tempreg16.vhd
+    Info (12022): Found design unit 1: tempreg16-struct File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg16.vhd Line: 15
+    Info (12023): Found entity 1: tempreg16 File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg16.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file tempreg8.vhd
+    Info (12022): Found design unit 1: tempreg8-struct File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg8.vhd Line: 15
+    Info (12023): Found entity 1: tempreg8 File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg8.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file tempreg3.vhd
+    Info (12022): Found design unit 1: tempreg3-struct File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg3.vhd Line: 15
+    Info (12023): Found entity 1: tempreg3 File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg3.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file tempreg1+flag_en.vhd
+    Info (12022): Found design unit 1: tempreg1-struct File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg1+flag_en.vhd Line: 15
+    Info (12023): Found entity 1: tempreg1 File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg1+flag_en.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file signextender9.vhd
+    Info (12022): Found design unit 1: signextender9-struct File: /home/dimple/Downloads/Updated micro_4 Nov/signextender9.vhd Line: 14
+    Info (12023): Found entity 1: signextender9 File: /home/dimple/Downloads/Updated micro_4 Nov/signextender9.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file signextender6.vhd
+    Info (12022): Found design unit 1: signextender6-struct File: /home/dimple/Downloads/Updated micro_4 Nov/signextender6.vhd Line: 14
+    Info (12023): Found entity 1: signextender6 File: /home/dimple/Downloads/Updated micro_4 Nov/signextender6.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file shifter7.vhd
+    Info (12022): Found design unit 1: shifter7-struct File: /home/dimple/Downloads/Updated micro_4 Nov/shifter7.vhd Line: 13
+    Info (12023): Found entity 1: shifter7 File: /home/dimple/Downloads/Updated micro_4 Nov/shifter7.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file registerfile.vhd
+    Info (12022): Found design unit 1: registerfile-struct File: /home/dimple/Downloads/Updated micro_4 Nov/registerfile.vhd Line: 22
+    Info (12023): Found entity 1: registerfile File: /home/dimple/Downloads/Updated micro_4 Nov/registerfile.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file priorityencoder.vhd
+    Info (12022): Found design unit 1: priorityencoder-struct File: /home/dimple/Downloads/Updated micro_4 Nov/priorityencoder.vhd Line: 13
+    Info (12023): Found entity 1: priorityencoder File: /home/dimple/Downloads/Updated micro_4 Nov/priorityencoder.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: pc-struct File: /home/dimple/Downloads/Updated micro_4 Nov/pc.vhd Line: 14
+    Info (12023): Found entity 1: pc File: /home/dimple/Downloads/Updated micro_4 Nov/pc.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file next-state.vhd
+    Info (12022): Found design unit 1: statetable1-statetable File: /home/dimple/Downloads/Updated micro_4 Nov/next-state.vhd Line: 22
+    Info (12023): Found entity 1: statetable1 File: /home/dimple/Downloads/Updated micro_4 Nov/next-state.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mux8.vhd
+    Info (12022): Found design unit 1: mux8-struct File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 25
+    Info (12023): Found entity 1: mux8 File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mux4.vhd
+    Info (12022): Found design unit 1: mux4-struct File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 20
+    Info (12023): Found entity 1: mux4 File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
+    Info (12022): Found design unit 1: mux2-struct File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 18
+    Info (12023): Found entity 1: mux2 File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+    Info (12022): Found design unit 1: memory-struct File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 19
+    Info (12023): Found entity 1: memory File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file ir.vhd
+    Info (12022): Found design unit 1: ir-struct File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 14
+    Info (12023): Found entity 1: ir File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file demux2.vhd
+    Info (12022): Found design unit 1: demux2-struct File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 17
+    Info (12023): Found entity 1: demux2 File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: decoder-struct File: /home/dimple/Downloads/Updated micro_4 Nov/decoder.vhd Line: 13
+    Info (12023): Found entity 1: decoder File: /home/dimple/Downloads/Updated micro_4 Nov/decoder.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
+    Info (12022): Found design unit 1: datapath-behave File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 18
+    Info (12023): Found entity 1: datapath File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 9
+Info (12021): Found 11 design units, including 5 entities, in source file alu1.vhd
+    Info (12022): Found design unit 1: lab File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 5
+    Info (12022): Found design unit 2: add-Behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 41
+    Info (12022): Found design unit 3: mux0-Behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 57
+    Info (12022): Found design unit 4: adder8-behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 73
+    Info (12022): Found design unit 5: subtracter8-behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 110
+    Info (12022): Found design unit 6: alu1-struct File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 141
+    Info (12023): Found entity 1: add File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 38
+    Info (12023): Found entity 2: mux0 File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 53
+    Info (12023): Found entity 3: adder8 File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 68
+    Info (12023): Found entity 4: subtracter8 File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 105
+    Info (12023): Found entity 5: alu1 File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 133
+Info (12021): Found 13 design units, including 6 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: lab1 File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 6
+    Info (12022): Found design unit 2: add1-Behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 47
+    Info (12022): Found design unit 3: mux1-Behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 63
+    Info (12022): Found design unit 4: adder16-behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 79
+    Info (12022): Found design unit 5: subtracter16-behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 128
+    Info (12022): Found design unit 6: nand16-behave File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 170
+    Info (12022): Found design unit 7: alu-struct File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 219
+    Info (12023): Found entity 1: add1 File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 44
+    Info (12023): Found entity 2: mux1 File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 59
+    Info (12023): Found entity 3: adder16 File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 74
+    Info (12023): Found entity 4: subtracter16 File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 123
+    Info (12023): Found entity 5: nand16 File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 165
+    Info (12023): Found entity 6: alu File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 210
+Info (12127): Elaborating entity "datapath" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at datapath.vhd(19): used implicit default value for signal "dummy" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 19
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(20): object "mem_check" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 20
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r0" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r1" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r2" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r3" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r4" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r5" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r6" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(23): object "r7" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 23
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(25): object "dummy_c" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 25
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:pc_mux" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 235
+Warning (10631): VHDL Process Statement warning at mux2.vhd(20): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[0]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[1]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[2]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[3]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[4]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[5]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[6]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[7]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[8]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[9]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[10]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[11]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[12]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[13]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[14]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[15]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:memA_mux" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 239
+Warning (10631): VHDL Process Statement warning at mux4.vhd(22): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[0]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[1]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[2]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[3]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[4]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[5]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[6]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[7]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[8]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[9]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[10]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[11]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[12]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[13]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[14]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[15]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:a1_mux" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 247
+Warning (10631): VHDL Process Statement warning at mux2.vhd(20): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[0]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[1]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[2]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:a3_mux" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 255
+Warning (10631): VHDL Process Statement warning at mux4.vhd(22): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[0]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[1]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (10041): Inferred latch for "dout[2]" at mux4.vhd(22) File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Info (12128): Elaborating entity "mux8" for hierarchy "mux8:t1_mux" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 263
+Warning (10631): VHDL Process Statement warning at mux8.vhd(27): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[0]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[1]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[2]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[3]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[4]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[5]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[6]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[7]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[8]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[9]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[10]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[11]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[12]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[13]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[14]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (10041): Inferred latch for "dout[15]" at mux8.vhd(27) File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:t4_mux" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 275
+Warning (10631): VHDL Process Statement warning at mux2.vhd(20): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[0]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[1]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[2]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[3]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[4]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[5]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[6]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (10041): Inferred latch for "dout[7]" at mux2.vhd(20) File: /home/dimple/Downloads/Updated micro_4 Nov/mux2.vhd Line: 20
+Info (12128): Elaborating entity "demux2" for hierarchy "demux2:ir_demux" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 287
+Warning (10631): VHDL Process Statement warning at demux2.vhd(19): inferring latch(es) for signal or variable "dout1", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at demux2.vhd(19): inferring latch(es) for signal or variable "dout2", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[0]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[1]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[2]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[3]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[4]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[5]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[6]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[7]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout2[8]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[0]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[1]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[2]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[3]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[4]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[5]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[6]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[7]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (10041): Inferred latch for "dout1[8]" at demux2.vhd(19) File: /home/dimple/Downloads/Updated micro_4 Nov/demux2.vhd Line: 19
+Info (12128): Elaborating entity "tempreg16" for hierarchy "tempreg16:t1" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 290
+Info (12128): Elaborating entity "tempreg8" for hierarchy "tempreg8:t4" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 299
+Info (12128): Elaborating entity "tempreg3" for hierarchy "tempreg3:t5" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 302
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:D" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 308
+Info (12128): Elaborating entity "priorityencoder" for hierarchy "priorityencoder:PE" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 311
+Info (12128): Elaborating entity "signextender9" for hierarchy "signextender9:SE9" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 314
+Info (12128): Elaborating entity "signextender6" for hierarchy "signextender6:SE6" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 317
+Info (12128): Elaborating entity "shifter7" for hierarchy "shifter7:s7" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 320
+Info (12128): Elaborating entity "ir" for hierarchy "ir:instr_reg" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 323
+Warning (10492): VHDL Process Statement warning at ir.vhd(22): signal "din" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 22
+Warning (10631): VHDL Process Statement warning at ir.vhd(17): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[0]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[1]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[2]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[3]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[4]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[5]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[6]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[7]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[8]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[9]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[10]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[11]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[12]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[13]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[14]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (10041): Inferred latch for "dout[15]" at ir.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/ir.vhd Line: 17
+Info (12128): Elaborating entity "registerfile" for hierarchy "registerfile:reg_file" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 326
+Info (12128): Elaborating entity "tempreg1" for hierarchy "tempreg1:carry_reg" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 330
+Warning (10631): VHDL Process Statement warning at tempreg1+flag_en.vhd(17): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg1+flag_en.vhd Line: 17
+Info (10041): Inferred latch for "dout" at tempreg1+flag_en.vhd(17) File: /home/dimple/Downloads/Updated micro_4 Nov/tempreg1+flag_en.vhd Line: 17
+Info (12128): Elaborating entity "tempreg_alu1" for hierarchy "tempreg_alu1:zero1_reg" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 336
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_16" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 339
+Warning (10631): VHDL Process Statement warning at alu.vhd(233): inferring latch(es) for signal or variable "aluz", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Warning (10631): VHDL Process Statement warning at alu.vhd(233): inferring latch(es) for signal or variable "aluc", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Warning (10631): VHDL Process Statement warning at alu.vhd(233): inferring latch(es) for signal or variable "z", which holds its previous value in one or more paths through the process File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[0]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[1]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[2]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[3]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[4]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[5]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[6]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[7]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[8]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[9]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[10]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[11]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[12]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[13]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[14]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "z[15]" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "aluc" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (10041): Inferred latch for "aluz" at alu.vhd(233) File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+Info (12128): Elaborating entity "adder16" for hierarchy "alu:alu_16|adder16:addersixteen" File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 230
+Info (12128): Elaborating entity "add1" for hierarchy "alu:alu_16|adder16:addersixteen|add1:a0" File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 87
+Info (12128): Elaborating entity "nand16" for hierarchy "alu:alu_16|nand16:nandsixteen" File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 231
+Info (12128): Elaborating entity "subtracter16" for hierarchy "alu:alu_16|subtracter16:subtractersixteen" File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 232
+Warning (10036): Verilog HDL or VHDL warning at alu.vhd(130): object "c1" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 130
+Warning (10036): Verilog HDL or VHDL warning at alu.vhd(130): object "t1" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 130
+Info (12128): Elaborating entity "alu1" for hierarchy "alu1:alu_8" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 342
+Info (12128): Elaborating entity "subtracter8" for hierarchy "alu1:alu_8|subtracter8:subtractereight" File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 144
+Warning (10036): Verilog HDL or VHDL warning at alu1.vhd(112): object "c1" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 112
+Warning (10036): Verilog HDL or VHDL warning at alu1.vhd(112): object "t1" assigned a value but never read File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 112
+Info (12128): Elaborating entity "adder8" for hierarchy "alu1:alu_8|subtracter8:subtractereight|adder8:a1" File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 122
+Info (12128): Elaborating entity "add" for hierarchy "alu1:alu_8|subtracter8:subtractereight|adder8:a1|add:a0" File: /home/dimple/Downloads/Updated micro_4 Nov/alu1.vhd Line: 76
+Info (12128): Elaborating entity "pc" for hierarchy "pc:Prog_counter" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 345
+Info (12128): Elaborating entity "memory" for hierarchy "memory:MEM" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 348
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[0]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[1]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[2]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[3]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[4]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[5]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[6]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[7]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[8]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[9]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[10]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[11]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[12]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[13]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[14]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:aluA_mux|dout[15]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[0]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[1]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[2]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[3]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[4]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[5]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[6]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[7]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[8]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[9]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[10]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[11]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[12]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[13]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[14]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:d3_mux|dout[15]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:a3_mux|dout[0]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:a3_mux|dout[1]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:a3_mux|dout[2]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:memA_mux|dout[0]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:memA_mux|dout[1]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:memA_mux|dout[2]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:memA_mux|dout[3]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux4:memA_mux|dout[4]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux4.vhd Line: 22
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[4]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[3]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[2]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[1]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[0]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[0]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[2]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[3]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[4]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[5]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[5]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[6]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[6]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[7]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[7]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[8]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[8]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[9]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[9]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[10]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[10]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[11]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[11]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[12]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[12]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[13]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[13]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[14]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[14]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[15]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:t1_mux|dout[15]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (14026): LATCH primitive "mux8:aluB_mux|dout[1]" is permanently enabled File: /home/dimple/Downloads/Updated micro_4 Nov/mux8.vhd Line: 27
+Warning (13012): Latch alu:alu_16|z[0] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[0] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|aluc has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 213
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[0] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|aluz has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 214
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[1] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[3] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[2] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[4] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[15] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[14] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[13] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[12] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[11] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[10] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[9] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[8] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[7] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[6] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Warning (13012): Latch alu:alu_16|z[5] has unsafe behavior File: /home/dimple/Downloads/Updated micro_4 Nov/alu.vhd Line: 233
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal control_store[1] File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Info (13000): Registers with preset signals will power-up high File: /home/dimple/Downloads/Updated micro_4 Nov/registerfile.vhd Line: 33
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register memory:MEM|mem[2][1] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[3][1] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[3][2] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[1][3] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[2][3] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[0][4] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[3][5] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[1][5] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[2][6] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[0][6] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[2][7] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[2][8] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[1][8] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[3][8] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[1][9] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[3][9] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[2][10] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[1][10] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[3][10] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[2][11] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+    Critical Warning (18010): Register memory:MEM|mem[0][0] will power up to High File: /home/dimple/Downloads/Updated micro_4 Nov/memory.vhd Line: 26
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "control_store[29]" File: /home/dimple/Downloads/Updated micro_4 Nov/datapath.vhd Line: 10
+Info (21057): Implemented 1919 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 33 input pins
+    Info (21059): Implemented 19 output pins
+    Info (21061): Implemented 1867 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 162 warnings
+    Info: Peak virtual memory: 1249 megabytes
+    Info: Processing ended: Mon Nov  5 23:06:17 2018
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:45
+
+

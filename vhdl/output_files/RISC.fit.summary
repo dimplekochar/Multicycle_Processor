@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Nov 23 05:20:45 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : RISC
+Top-level Entity Name : RISC
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,621 / 22,320 ( 7 % )
+    Total combinational functions : 1,424 / 22,320 ( 6 % )
+    Dedicated logic registers : 684 / 22,320 ( 3 % )
+Total registers : 684
+Total pins : 54 / 154 ( 35 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

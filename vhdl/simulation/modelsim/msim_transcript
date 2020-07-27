@@ -1,0 +1,441 @@
+# do RISC_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Modifying /home/dimple/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/tempreg1_no_flag.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/tempreg1_no_flag.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tempreg_alu1
+# -- Compiling architecture struct of tempreg_alu1
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/tempreg16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/tempreg16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tempreg16
+# -- Compiling architecture struct of tempreg16
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/tempreg8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/tempreg8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tempreg8
+# -- Compiling architecture struct of tempreg8
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/tempreg3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/tempreg3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tempreg3
+# -- Compiling architecture struct of tempreg3
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/tempreg1+flag_en.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/tempreg1+flag_en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tempreg1
+# -- Compiling architecture struct of tempreg1
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/signextender9.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/signextender9.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity signextender9
+# -- Compiling architecture struct of signextender9
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/signextender6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/signextender6.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity signextender6
+# -- Compiling architecture struct of signextender6
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/shifter7.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/shifter7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity shifter7
+# -- Compiling architecture struct of shifter7
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/RISC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/RISC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RISC
+# -- Compiling architecture behave of RISC
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/registerfile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registerfile
+# -- Compiling architecture struct of registerfile
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/priorityencoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/priorityencoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity priorityencoder
+# -- Compiling architecture struct of priorityencoder
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/pc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pc
+# -- Compiling architecture struct of pc
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/next-state.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/next-state.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity statetable1
+# -- Compiling architecture statetable of statetable1
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/mux8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/mux8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux8
+# -- Compiling architecture struct of mux8
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/mux4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/mux4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux4
+# -- Compiling architecture struct of mux4
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/mux2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/mux2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux2
+# -- Compiling architecture struct of mux2
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture struct of memory
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/ir.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/ir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ir
+# -- Compiling architecture struct of ir
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/demux2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/demux2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity demux2
+# -- Compiling architecture struct of demux2
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/decoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity decoder
+# -- Compiling architecture struct of decoder
+# End time: 05:21:08 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:08 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture behave of datapath
+# End time: 05:21:09 on Nov 23,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/alu1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:09 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/alu1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package lab
+# -- Loading package NUMERIC_STD
+# -- Compiling entity add
+# -- Compiling architecture Behave of add
+# -- Compiling entity mux0
+# -- Compiling architecture Behave of mux0
+# -- Loading package lab
+# -- Compiling entity adder8
+# -- Compiling architecture behave of adder8
+# -- Compiling entity subtracter8
+# -- Compiling architecture behave of subtracter8
+# -- Compiling entity alu1
+# -- Compiling architecture struct of alu1
+# End time: 05:21:09 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/dimple/Downloads/Micro-21 Nov/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 05:21:09 on Nov 23,2018
+# vcom -reportprogress 300 -93 -work work /home/dimple/Downloads/Micro-21 Nov/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package lab1
+# -- Compiling entity add1
+# -- Compiling architecture Behave of add1
+# -- Compiling entity mux1
+# -- Compiling architecture Behave of mux1
+# -- Loading package lab1
+# -- Compiling entity adder16
+# -- Compiling architecture behave of adder16
+# -- Compiling entity subtracter16
+# -- Compiling architecture behave of subtracter16
+# -- Compiling entity nand16
+# -- Compiling architecture behave of nand16
+# -- Compiling entity alu
+# -- Compiling architecture struct of alu
+# End time: 05:21:09 on Nov 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.risc(behave)
+# vsim work.risc(behave) 
+# Start time: 05:21:12 on Nov 23,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.risc(behave)
+# Loading ieee.numeric_std(body)
+# Loading work.statetable1(statetable)
+# Loading work.datapath(behave)
+# Loading work.mux2(struct)
+# Loading work.mux4(struct)
+# Loading work.mux8(struct)
+# Loading work.demux2(struct)
+# Loading work.tempreg16(struct)
+# Loading work.tempreg8(struct)
+# Loading work.tempreg3(struct)
+# Loading work.decoder(struct)
+# Loading work.priorityencoder(struct)
+# Loading work.signextender9(struct)
+# Loading work.signextender6(struct)
+# Loading work.shifter7(struct)
+# Loading work.ir(struct)
+# Loading work.registerfile(struct)
+# Loading work.tempreg1(struct)
+# Loading work.tempreg_alu1(struct)
+# Loading work.lab1
+# Loading work.alu(struct)
+# Loading work.adder16(behave)
+# Loading work.add1(behave)
+# Loading work.nand16(behave)
+# Loading work.subtracter16(behave)
+# Loading work.lab
+# Loading work.alu1(struct)
+# Loading work.subtracter8(behave)
+# Loading work.adder8(behave)
+# Loading work.add(behave)
+# Loading work.pc(struct)
+# Loading work.memory(struct)
+add wave -position insertpoint  \
+sim:/risc/CLK \
+sim:/risc/IR \
+sim:/risc/RST \
+sim:/risc/alu1_z \
+sim:/risc/carry \
+sim:/risc/clk_50s \
+sim:/risc/control \
+sim:/risc/control_signal \
+sim:/risc/instruction \
+sim:/risc/zero
+add wave -position insertpoint  \
+sim:/risc/fsm/next_state \
+sim:/risc/fsm/state
+add wave -position insertpoint sim:/risc/total_flow/t1/*
+add wave -position insertpoint sim:/risc/total_flow/t2/*
+add wave -position insertpoint sim:/risc/total_flow/t3/*
+add wave -position insertpoint sim:/risc/total_flow/t4/*
+add wave -position insertpoint sim:/risc/total_flow/t5/*
+add wave -position insertpoint sim:/risc/total_flow/t6/*
+add wave -position insertpoint sim:/risc/total_flow/t9/*
+add wave -position insertpoint sim:/risc/total_flow/t8/*
+add wave -position insertpoint sim:/risc/total_flow/t10/*
+add wave -position insertpoint  \
+sim:/risc/total_flow/reg_file/registers
+add wave -position insertpoint sim:/risc/total_flow/carry_reg/*
+add wave -position insertpoint sim:/risc/total_flow/zero_reg/*
+add wave -position insertpoint sim:/risc/total_flow/c_reg/*
+add wave -position insertpoint sim:/risc/total_flow/z_reg/*
+add wave -position insertpoint sim:/risc/total_flow/zero1_reg/*
+add wave -position insertpoint sim:/risc/total_flow/alu_16/*
+add wave -position insertpoint sim:/risc/total_flow/alu_8/*
+add wave -position insertpoint sim:/risc/total_flow/Prog_counter/*
+add wave -position insertpoint  \
+sim:/risc/total_flow/MEM/mem
+force -freeze sim:/risc/RST 0 0
+force -freeze sim:/risc/CLK 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /risc/total_flow/MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /risc/total_flow/MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /risc/total_flow/reg_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /risc/total_flow/reg_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /risc/total_flow/reg_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /risc/total_flow/reg_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /risc/total_flow/MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /risc/total_flow/MEM
+force -freeze sim:/risc/RST 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 05:27:15 on Nov 23,2018, Elapsed time: 0:06:03
+# Errors: 0, Warnings: 8

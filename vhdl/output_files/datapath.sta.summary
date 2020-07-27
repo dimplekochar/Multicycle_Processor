@@ -1,0 +1,185 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'control_store[0]'
+Slack : -26.497
+TNS   : -446.710
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -23.761
+TNS   : -13635.703
+
+Type  : Slow 1200mV 85C Model Setup 'control_store[27]'
+Slack : -21.681
+TNS   : -244.156
+
+Type  : Slow 1200mV 85C Model Setup 'control_store[2]'
+Slack : -3.345
+TNS   : -3.345
+
+Type  : Slow 1200mV 85C Model Setup 'control_store[3]'
+Slack : -3.130
+TNS   : -3.130
+
+Type  : Slow 1200mV 85C Model Hold 'control_store[0]'
+Slack : -0.048
+TNS   : -0.048
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 1.369
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'control_store[27]'
+Slack : 2.214
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'control_store[3]'
+Slack : 2.967
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'control_store[2]'
+Slack : 3.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -659.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control_store[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control_store[27]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control_store[2]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control_store[3]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'control_store[0]'
+Slack : -23.834
+TNS   : -402.678
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -21.474
+TNS   : -12302.530
+
+Type  : Slow 1200mV 0C Model Setup 'control_store[27]'
+Slack : -19.570
+TNS   : -220.048
+
+Type  : Slow 1200mV 0C Model Setup 'control_store[2]'
+Slack : -3.004
+TNS   : -3.004
+
+Type  : Slow 1200mV 0C Model Setup 'control_store[3]'
+Slack : -2.786
+TNS   : -2.786
+
+Type  : Slow 1200mV 0C Model Hold 'control_store[0]'
+Slack : -0.032
+TNS   : -0.032
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 1.264
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'control_store[27]'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'control_store[3]'
+Slack : 2.723
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'control_store[2]'
+Slack : 2.954
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -659.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control_store[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control_store[27]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control_store[2]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control_store[3]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'control_store[0]'
+Slack : -15.414
+TNS   : -261.640
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -13.951
+TNS   : -8055.286
+
+Type  : Fast 1200mV 0C Model Setup 'control_store[27]'
+Slack : -12.277
+TNS   : -137.926
+
+Type  : Fast 1200mV 0C Model Setup 'control_store[2]'
+Slack : -1.482
+TNS   : -1.482
+
+Type  : Fast 1200mV 0C Model Setup 'control_store[3]'
+Slack : -1.331
+TNS   : -1.331
+
+Type  : Fast 1200mV 0C Model Hold 'control_store[0]'
+Slack : -0.077
+TNS   : -0.136
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.714
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'control_store[27]'
+Slack : 1.082
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'control_store[3]'
+Slack : 1.638
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'control_store[2]'
+Slack : 1.792
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -709.755
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control_store[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control_store[27]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control_store[2]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control_store[3]'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------

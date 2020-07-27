@@ -1,0 +1,61 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/dimple/Downloads/Updated micro_6 Nov_nisha/simulation/modelsim
+Erisc
+Z1 w1541482337
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 ^kCD41mNl0>`]XjZB>YSA0
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 g]cnIk[[fcjg=POME[ePX3
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 f]3lf9@YecQXY?:9nU3z[2
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 Y1<AEW^7fEcRY3jd0@`=U2
+R0
+Z10 8RISC_6_1200mv_85c_slow.vho
+Z11 FRISC_6_1200mv_85c_slow.vho
+l0
+L37
+VhVe@d7f?Li;No9k7AlO9l2
+!s100 G11ckWO8Sg48:R6>FYZld1
+Z12 OV;C;10.4d;61
+31
+!s110 1541482395
+!i10b 1
+Z13 !s108 1541482395.000000
+Z14 !s90 -reportprogress|300|-93|-work|work|RISC_6_1200mv_85c_slow.vho|
+Z15 !s107 RISC_6_1200mv_85c_slow.vho|
+!i113 1
+Z16 o-93 -work work
+Z17 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 4 risc 0 22 hVe@d7f?Li;No9k7AlO9l2
+l2454
+L100
+VZ_WF4a8J][ojCg=f3:`R=2
+!s100 =cU_W[?;R<<2Q@eXOW8F;2
+R12
+31
+!s110 1541482396
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17

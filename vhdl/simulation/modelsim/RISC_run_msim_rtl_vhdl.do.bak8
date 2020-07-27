@@ -1,0 +1,31 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/tempreg1_no_flag.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/tempreg16.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/tempreg8.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/tempreg3.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/tempreg1+flag_en.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/signextender9.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/signextender6.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/shifter7.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/RISC.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/registerfile.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/priorityencoder.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/pc.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/next-state.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/mux8.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/mux4.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/mux2.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/memory.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/ir.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/demux2.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/decoder.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/datapath.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/alu1.vhd}
+vcom -93 -work work {/home/nisha/Desktop/EE309 Micro Project /Project 1 - Multicycle/Updated micro_5 Nov_dimple/alu.vhd}
+
